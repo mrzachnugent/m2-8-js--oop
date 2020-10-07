@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borfer-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 100px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.book-anim {
+  height: 105px;
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-title {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+main {
+  background: #74b9ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 2px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.cards {
+  background: #fff;
+  border-radius: 7px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px 20px;
+}
+
+.title-box {
+  background: #ff7675;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 7px 7px 0 0;
+}
+
+.book-title {
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.book-img {
+  height: 180px;
+  padding: 25px 0;
+  transform: rotate(2deg);
+}
+
+.status-section {
+  margin: 10px 0;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  color: #fff;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dark-purple {
+  background: #6c5ce7;
+  width: 100%;
+}
+.light-purple {
+  background: #a29bfe;
+  width: 100%;
+}
+.dark-pink {
+  background: #e84393;
+  width: 100%;
+}
+.light-pink {
+  background: #fd79a8;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 0;
+  border-radius: 7px 7px 0 0;
+}
+
+.status-text-container {
+  border-radius: 0 0 7px 7px;
+}
+
+.status-desc {
+  font-size: 17px;
+  padding: 10px 5px;
+}
+
+@media only screen and (min-width: 660px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .status-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .status-container {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .status-section {
+    height: 400px;
+  }
+
+  .status-container {
+    margin: 20px;
+  }
+}

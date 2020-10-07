@@ -4,7 +4,7 @@ class Student {
   }
 
   writeCode = () => {
-    this.learn();
+    this.excitement += 5;
   };
 }
 
